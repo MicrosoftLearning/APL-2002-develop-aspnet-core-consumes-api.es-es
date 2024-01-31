@@ -114,9 +114,9 @@ La aplicación web Fruit muestra los datos de ejemplo de API en la página princ
 
 1. Guarde los cambios en *Program.cs*.
 
-### Tarea 2: implementar la operación `GET`
+### Tarea 2: Implementación de la operación GET
 
-1. Seleccione el archivo *Index.cshtml.cs* en el panel **Explorador** para abrir el archivo en el editor.
+1. Selecciona el archivo *Index.cshtml.cs* en el panel **Explorador** para abrirlo y editarlo.
 
 1. Agregue el código siguiente entre los comentarios `// Begin GET operation code` y `// End GET operation code`.
 
@@ -156,15 +156,15 @@ La aplicación web Fruit muestra los datos de ejemplo de API en la página princ
 
     ![Captura de pantalla del símbolo de sistema para instalar un certificado autofirmado.](media/install-cert.png)
 
-1. Para continuar con el ejercicio, cierre el explorador o la pestaña del explorador y, en Visual Studio Code, seleccione **Ejecutar depuración de inicio de \|** o **Mayús + F5**.
+1. Para continuar con el ejercicio, cierra el explorador o la pestaña del explorador y, en Visual Studio Code, selecciona **Ejecutar \| Detener depuración** o pulsa **Mayús+F5**.
 
-## Implemente el código de las operaciones `POST`, `PUT` y `DELETE`
+## Implementación de código para las operaciones POST, PUT y DELETE
 
-En esta sección, agregará código al proyecto para habilitar la funcionalidad **Agregar a la lista**, **Editar** y **Eliminar** en la aplicación web. 
+En esta sección, agregarás código al proyecto para habilitar las funciones **Agregar a la lista**, **Editar** y **Eliminar** en la aplicación web. 
 
-### Tarea 1: implementar la operación `POST`
+### Tarea 1: Implementación de la operación POST
 
-1. Seleccione el archivo *Add.cshtml.cs* en el panel **Explorador** para abrir el archivo en el editor.
+1. Selecciona el archivo *Add.cshtml.cs* en el panel **Explorador** para abrirlo y editarlo.
 
 1. Agregue el código siguiente entre los comentarios `// Begin POST operation code` y `// End POST operation code`.
 
@@ -206,11 +206,11 @@ En esta sección, agregará código al proyecto para habilitar la funcionalidad 
 
 1. Compruebe que la adición aparece en la parte inferior de la lista. El mensaje de éxito o error cerca de la parte superior de la página le notificará si se produjo un problema.
 
-1. Para continuar con el ejercicio, cierre el explorador o la pestaña del explorador y, en Visual Studio Code, seleccione **Ejecutar depuración de inicio de \|** o **Mayús + F5**.
+1. Para continuar con el ejercicio, cierra el explorador o la pestaña del explorador y, en Visual Studio Code, selecciona **Ejecutar \| Detener depuración** o pulsa **Mayús+F5**.
 
-### Tarea 1: implementar la operación `PUT`
+### Tarea 1: Implementación de la operación PUT
 
-1. Seleccione el archivo *Edit.cshtml.cs* en el panel **Explorador** para abrir el archivo en el editor.
+1. Selecciona el archivo *Edit.cshtml.cs* en el panel **Explorador** para abrirlo y editarlo.
 
 1. Agregue el código siguiente entre los comentarios `// Begin PUT operation code` y `// End PUT operation code`.
 
@@ -254,11 +254,11 @@ En esta sección, agregará código al proyecto para habilitar la funcionalidad 
 
 1. Compruebe que los cambios aparecen en la lista. El mensaje de éxito o error cerca de la parte superior de la página le notificará si se produjo un problema.
 
-1. Para continuar con el ejercicio, cierre el explorador o la pestaña del explorador y, en Visual Studio Code, seleccione **Ejecutar depuración de inicio de \|** o **Mayús + F5**.
+1. Para continuar con el ejercicio, cierra el explorador o la pestaña del explorador y, en Visual Studio Code, selecciona **Ejecutar \| Detener depuración** o pulsa **Mayús+F5**.
 
-### Tarea 1: implementar la operación `DELETE`
+### Tarea 1: Implementación de la operación DELETE
 
-1. Seleccione el archivo *Delete.cshtml.cs* en el panel **Explorador** para abrir el archivo en el editor.
+1. Selecciona el archivo *Delete.cshtml.cs* en el panel **Explorador** para abrirlo y editarlo.
 
 1. Agregue el código siguiente entre los comentarios `// Begin DELETE operation code` y `// End DELETE operation code`.
 
@@ -291,17 +291,16 @@ En esta sección, agregará código al proyecto para habilitar la funcionalidad 
 
 1. En el menú superior de Visual Studio Code, seleccione **Ejecutar depuración de inicio de \|** o seleccione **F5**. Una vez que el proyecto haya terminado de compilar una ventana del explorador, debe iniciarse con la aplicación web en ejecución.
 
-1. Elija un elemento de la lista que quiera eliminar y seleccione el botón **Eliminar**. 
-
-1. Edite el **nombre de la fruta** y el campo **¿Está disponible?** y, a continuación, seleccione **Actualizar**.
+1. Elija un elemento de la lista que quiera eliminar y seleccione el botón **Eliminar**.
+2. En la página Eliminar, compruebe que se muestra el elemento seleccionado y haga clic en el botón **Eliminar**.
 
 1. Compruebe que el elemento no aparece en la lista. El mensaje de éxito o error cerca de la parte superior de la página le notificará si se produjo un problema.
 
 Cuando tenga todo listo para finalizar el ejercicio:
 
-* Cierre el explorador o la pestaña del explorador y, en Visual Studio Code, seleccione **Ejecutar depuración de finalización de \|** o **Mayús + F5**. 
+* Cierra el explorador o la pestaña del explorador y, en Visual Studio Code, selecciona **Ejecutar \| Detener depuración** o pulsa **Mayús+F5**. 
 
-* Detenga Fruit API escribiendo `Ctrl + C` en el terminal en el que se ejecuta.
+* Para detener Fruit API, pulsa **Ctrl+C** en el terminal en el que se ejecuta.
 
 ## Revisar
 
