@@ -17,8 +17,8 @@ Después de completar este módulo, podrá hacer lo siguiente:
 
 Para completar el ejercicio, necesita que las herramientas siguientes estén instaladas en el sistema:
 
-* [Visual Studio Code.](https://code.visualstudio.com)
-* [El SDK de .NET 7.0 más reciente.](https://dotnet.microsoft.com/download/dotnet/7.0)
+* [Visual Studio Code](https://code.visualstudio.com)
+* [El SDK de .NET 8.0 más reciente](https://dotnet.microsoft.com/download/dotnet/8.0)
 * La [extensión de C#](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csharp) para Visual Studio Code.
 * La extensión [Recursos de Azure](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-azureresourcegroups) para Visual Studio Code.
 * La extensión [Azure App Service](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-azureappservice) para Visual Studio Code.
@@ -110,13 +110,13 @@ En esta sección hará lo siguiente:
 
 ### Tarea 1: Realizar una operación `GET`
 
-1. Expanda la operación **GET** en la sección **Obtener toda la fruta** haciendo clic en cualquier parte del cuadro de operación **GET**.
+1. Expande la operación **GET** con el descriptor **Get all fruits**; para ello, haz clic en cualquier lugar del cuadro de operación **GET**.
 
 1. Explore las secciones de la operación y anote la información que se muestra en la tabla siguiente.
 
     | Sección | Descripción |
     |---|--|
-    | **Punto de conexión** | Se muestra en el encabezado de la operación. El punto de conexión se muestra como `/fruitlist`. El URI completo es la dirección URL base de la API anexada con el punto de conexión especificado, `http://localhost:5050/fruitlist` en nuestro ejemplo. |
+    | **Punto de conexión** | Se muestra en el encabezado de la operación. El punto de conexión se muestra como `/fruits`. El URI completo es la dirección URL base de la API anexada con el punto de conexión especificado, `http://localhost:5050/fruits` en nuestro ejemplo. |
     | **Parámetros** | Ninguno necesario para esta operación. |
     | **Tipo de elemento multimedia** | Especifica la codificación de tipo multimedia que devolverá la operación. |
     | **Valor de ejemplo** | Muestra el esquema de los datos devueltos por la operación. Tenga en cuenta que esta operación devuelve una matriz JSON. |
@@ -130,13 +130,13 @@ En esta sección hará lo siguiente:
 
 ### Tarea 2: Realizar una operación `POST`
 
-1. Expanda la operación **POST** en la sección **Agregar fruta a la lista** haciendo clic en cualquier parte del cuadro de operación **POST**.
+1. Expande la operación **POST** con el descriptor **Create a new fruit**; para ello, haz clic en cualquier lugar del cuadro de operación **POST**.
 
 1. Explore las secciones de la operación y anote la información que se muestra en la tabla siguiente.
 
     | Sección | Descripción |
     |---|--|
-    | **Punto de conexión** | El punto de conexión se muestra como `/fruitlist`. El URI completo es la dirección URL base de la API anexada con el punto de conexión especificado, `http://localhost:5050/fruitlist` en nuestro ejemplo. |
+    | **Punto de conexión** | El punto de conexión se muestra como `/fruits`. El URI completo es la dirección URL base de la API anexada con el punto de conexión especificado, `http://localhost:5050/fruits` en nuestro ejemplo. |
     | **Parámetros** | Ninguno necesario para esta operación. |
     | **Cuerpo de la solicitud** | El **cuerpo de la solicitud** es necesario, ya que la API espera que los datos se agreguen a la lista y se espera el tipo de elemento multimedia `application/json`. |
     | **Valor de ejemplo** | Muestra el esquema de los datos que espera recibir la API. |  
@@ -160,17 +160,17 @@ En esta sección hará lo siguiente:
     * **Dirección URL de solicitud:** dirección URL a la que se accede en la operación.
     * **Respuesta del servidor:** muestra el código correcto de la operación y el **cuerpo de la respuesta** muestra el registro agregado en la base de datos.
 
-1. Ejecute el comando `GET` en la sección **Obtener todas las frutas de la lista** y tenga en cuenta que ahora se incluye un registro para *Pera*.
+1. Ejecuta el comando `GET` en la sección **Get all fruits** y ten en cuenta que ahora se incluye un registro para *Pear*.
 
 ### Tarea 3: Realizar una operación `DELETE`
 
-1. Expanda la operación **DELETE** en la sección **Eliminar fruta por id.** haciendo clic en cualquier parte del cuadro de operación **DELETE**.
+1. Expande la operación **DELETE** con el descriptor **Delete a fruit by Id**; para ello, haz clic en cualquier lugar del cuadro de operación **DELETE**.
 
 1. Explore las secciones de la operación y anote la información que se muestra en la tabla siguiente.
 
     | Sección | Descripción |
     |---|--|
-    | **Punto de conexión** | El punto de conexión se muestra como `/fruitlist/{id}`. El URI completo es la dirección URL base de la API anexada con el `id` especificado para la eliminación. Por ejemplo, `http://localhost:5050/fruitlist/1` apunta al registro donde `id` es igual a `1`.
+    | **Punto de conexión** | El punto de conexión se muestra como `/fruits/{id}`. El URI completo es la dirección URL base de la API anexada con el `id` especificado para la eliminación. Por ejemplo, `http://localhost:5050/fruits/1` apunta al registro donde `id` es igual a `1`.
     | **Parámetros** | Requiere que se pase el `id` del registro en la dirección URL de la solicitud. |
 
 1. Para ejecutar la operación, seleccione el botón **Probarlo.** 
@@ -183,13 +183,13 @@ En esta sección hará lo siguiente:
     * **Cuerpo de la respuesta:** muestra el registro eliminado.
     * **Código:**  muestra el código correcto de la operación.
 
-1. Ejecute el comando `GET` en la sección **Obtener todas las frutas de la lista** y tenga en cuenta que se ha eliminado el registro para *Manzana*.
+1. Ejecuta el comando `GET` en la sección **Get all fruits** y ten en cuenta que se ha eliminado el registro para *Apple*.
 
-Cuando tenga todo listo para pasar a la sección siguiente del ejercicio:
+Al acabar de prepararse para pasar a la sección siguiente del ejercicio:
 
-* Cierre el explorador y detenga Fruit API escribiendo `Ctrl + C` en el terminal en el que se ejecuta.
+* Cierra el explorador y detén Fruit API al pulsar **Ctrl+C** en el terminal en el que se ejecuta.
 
-## Publique la API en Azure App Service
+## Publicación de la API en Azure App Service
 
 En esta sección hará lo siguiente:
 
@@ -220,7 +220,7 @@ En esta sección hará lo siguiente:
 
 1. Seleccione **+Crear nuevo grupo de recursos** y acepte el valor predeterminado o escriba `fruitapi-rg`.
 
-1. Seleccione **.NET 7 (STS)** como pila de runtime.
+1. Selecciona **.NET 8 (LTS)** como pila de runtime.
 
 1. Seleccione **Linux** como Sistema operativo.
 
@@ -242,7 +242,9 @@ La herramienta creará los recursos necesarios en Azure y compilará el código.
 
 1. Cuando la implementación haya completado una nueva ventana emergente aparecerá con la opción **Examinar sitio web**, seleccione **Examinar sitio web**.
 
-1. En la nueva ventana del explorador, escriba `/swagger` al final de la dirección URL. 
+1. En la ventana del explorador que se abre, es posible que tengas que agregar `/fruits` al final de la dirección URL. Verás la salida sin procesar de la API que muestra todos los datos.
+
+    >**NOTA:** la interfaz de usuario de Swagger está deshabilitada porque solo está habilitada para entornos de desarrollo. La implementación en App Service se considera un entorno que no es de desarrollo a menos que realices una configuración adicional.
 
 Enhorabuena, ha implementado la API en Azure App Service.
 
